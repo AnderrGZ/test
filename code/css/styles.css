@@ -1,56 +1,179 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 800px;
-  min-height: 100vh;
-  border: medium solid red;
-  text-align: center;
-  font-family: system-ui, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c; /* Fondo gris oscuro */
+  color: #fff; /* Texto blanco */
 }
 
-a {
-  color: #1873a5;
-  transition: all 0.3s ease-out;
-
-  &:hover {
-    color: red;
-  }
-}
-
-hr {
-  margin: 2rem auto;
-  width: 80%;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-p,
-li {
-  text-align: left;
-}
-
-.menu {
+.horizontal-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  border: thin solid red;
+  background-color: #e3342f; /* Rojo principal */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
 
-  ul {
-    margin: 0;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-  }
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 250px;
+}
 
-  li {
-    list-style: none;
-  }
+.search-input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  background-color: #e3342f; /* Rojo del buscador */
+  color: #fff; /* Texto blanco */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e3342f; /* Fondo rojo */
+}
+
+.nav-links a:hover {
+  background-color: #cc1f1a; /* Rojo más oscuro al pasar el mouse */
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e3342f; /* Fondo rojo */
+}
+
+.social-links a .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 5px;
+}
+
+.social-links a:hover {
+  background-color: #cc1f1a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 120px;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  width: 90%;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #e3342f; /* Rojo */
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #e3342f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.horizontal-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.horizontal-section h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.horizontal-section a {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.horizontal-section img {
+  width: 100px;
+}
+
+.weapon-info {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.weapon-img {
+  width: 1280px;
+  height: 720px;
 }
